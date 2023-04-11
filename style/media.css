@@ -1,0 +1,126 @@
+@media (max-width:720px) {
+    .header-nav-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        justify-content: center;
+        top: -100%;
+        left: 0;
+        z-index: 999;
+       background: rgba(0, 0, 0, 0.507);
+       text-align: center;
+transition: 500ms;     
+}
+    .header-nav{
+        justify-content: space-between;
+        gap: 60px;
+    }
+    .burger{
+        display: block;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,121,9,0.3925945378151261) 46%, rgba(0,212,255,1) 94%);
+border-radius:100% ;    
+}
+    .header-nav-list a{
+        font-size: 30px;
+        color: white;
+
+    }
+
+    .burger:hover ~ .header-nav-list{
+       top: 0 !important;
+    }
+    .main__section_one .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__section_one .wrapper .right__first{
+        width: 526px;
+    }
+    .two_cards a{
+        flex-direction: column;
+        align-items: center;
+    }
+    .third-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-wrapper .first{
+        margin: 0;
+    }
+    .footer-wrapper .second{
+        margin: 0;
+    }
+    .footer-wrapper .third{
+        display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+    .footer-wrapper .third p{
+        padding: 0 60px;
+    text-align: center;
+    }
+}
+@media (max-width: 576px) {
+.header-nav{
+    gap:10px ;
+    justify-content: unset;
+    align-items: center;
+}
+
+.header-nav-icons a {
+gap: 20px;
+}
+.burger{
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+}
+.header-nav .logo  img{
+width: 80px;
+}
+
+.main__section_one .wrapper .left__first {
+    width: 320px;
+    padding: 10px;
+}
+.main__section_one .wrapper .right__first {
+
+    width: 320px;
+    padding: 10px;
+    height: max-content;
+
+    }
+    
+    .right__first .first_content{
+        margin-top: unset;
+    
+    }
+
+    .right__first .first_content img{
+        width: 200px;
+        height: 150px;
+    }
+   .two_card{
+    width: 320px;
+   }
+   .main__section_third .third-wrapper .content{
+    width: 320px;
+    height: max-content;
+    padding: 20px 10px;
+   }
+   .main__section_third .third-wrapper .content2 {
+    width: 320px;
+    height: max-content;
+    padding: 20px 10px;
+   }
+}
